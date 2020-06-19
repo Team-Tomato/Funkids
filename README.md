@@ -1,3 +1,17 @@
+This project was developed as part of [Student code-In 2020](https://scodein.tech/). We thank SCI team for the wonderful opportunity.
+
+---
+
+## OPEN SOURCE CONTEST
+
+## STUDENT CODE IN
+Student Code-in is a global program that helps students grow with “OPEN SOURCE”. It is a 2 months long Open-Source initiative which provides you the best platform to improve your skills and abilities by contributing to vast variety of OPEN SOURCE Projects. In this,all the registered participants would get an exquisite opportunity to interact with the mentors and the Organizing Team.
+
+![SCI-Logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSgoe-CsHHg0r3bZ9RyZ8n0_aEi2X_fNQVsxvqH4y0KMpnzbsQ&s)
+
+
+---
+
 # FunKids
 
 ## Description
@@ -23,3 +37,11 @@ When a kid says, "A for" our web app will reply as “Apple” with an image of 
 - React Js - For building interative user interfaces
 - FastAPI - Web framework for building REST APIs
 - Detectron - Facebook open-source project Detectron for image identification
+
+---
+
+### Reviewers
++ [Tamilarasu MK](https://github.com/tamilarasumk731)
++ [Inbasasi S](https://github.com/InbasasiS)
++ [Sridharan G](https://github.com/smartsri18)
++ [Akbar Habeeb B](https://github.com/AkbarHabeeb)
