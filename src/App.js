@@ -4,7 +4,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <Button
+        onClick={() => console.log("Button clicked!!")}
+        type="button"
+        buttonStyle="btn--primary--outline"
+        buttonSize="btn--small"
+      >
+      </Button>
     </div>
   );
 }
