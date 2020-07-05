@@ -1,7 +1,7 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 import Button from "./components/Button.jsx";
-
+import Footer from "./components/Footer.jsx";
 
 function App() {
   return (
@@ -11,8 +11,12 @@ function App() {
         type="button"
         buttonStyle="btn--primary--outline"
         buttonSize="btn--small"
-      >
-      </Button>
+      ></Button>
+      <Footer
+        year="2020"
+        footerColor="footer--danger--outline"
+        footerSize="footer--medium"
+      ></Footer>
     </div>
   );
 }
