@@ -9,7 +9,7 @@ function App() {
       <Button
         onClick={() => console.log("Button clicked!!")}
         type="button"
-        buttonStyle="btn--primary--outline"
+        buttonStyle="btn--primary--solid"
         buttonSize="btn--small"
       ></Button>
       <Footer
