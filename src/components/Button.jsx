@@ -22,6 +22,26 @@ export const Button = ({
   buttonStyle,
   buttonSize
 }) => {
+  function MouseOver(event) {
+    const btnClass=event.target.classList;
+    if (btnClass[1]=='btn--primary--solid') {
+      event.target.style.background="darkblue";
+    };
+    if (btnClass[1]=='btn--warning--solid') {
+      event.target.style.background="orange";
+    };
+    if (btnClass[1]=='btn--danger--solid') {
+      event.target.style.background="#960019";
+    };
+    if (btnClass[1]=='btn--success--solid') {
+      event.target.style.background="darkgreen";
+    };
+  }
+
+  function MouseOut(event){
+    event.target.style.background="";
+  }
+
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -29,6 +49,8 @@ export const Button = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
   return (
     <button
+      onMouseOver={MouseOver}
+      onMouseOut={MouseOut}
       className={`btn ${checkButtonStyle} ${checkButtonSize}`}
       id={elementID}
       onClick={onClick}
