@@ -1,31 +1,38 @@
 import React from "react";
 import { Navbar, Nav } from 'react-bootstrap';
 import './header.css';
+import logo from '../logo2.png';
 
-function Header({logoImg, width, height, heading}) {
+
+function Header({logoImg, width, height, heading, theme, headerLinks}) {
+
+    // options for theme: {dark/light}
 
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg={theme ? theme: 'dark'} variant={theme ? theme :'dark'}>
                 <Navbar.Brand href="/Home" className="navBrand">
                     <img
                         alt=""
-                        src={logoImg}
+                        src={logoImg? logoImg :logo}
                         width={width ? width: 30}
                         height={height ? height : 30}
                         className="d-inline-block align-top"
                     />{' '}
-                    {heading}
+                    {heading? heading : 'FUNKIDS'}
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Link href="/Home">Home</Nav.Link>
-                        <Nav.Link href="/About">About Us</Nav.Link>
-                        <Nav.Link href="/Contact">Contact Us</Nav.Link>
+                        {headerLinks ? 
+                            Object.entries(headerLinks).map(item => (
+                                <Nav.Link href={item[1]}>{item[0]}</Nav.Link>
+                            ))
+                            : 
+                            <Nav.Link href='/home'>Home</Nav.Link>
+                        }
                     </Nav>
-
                 </Navbar.Collapse>
             </Navbar>
         </div>
