@@ -9,7 +9,7 @@ function Header({logoImg, width, height, heading, theme, headerLinks}) {
     // options for theme: {dark/light}
 
     return (
-        <div>
+        <div style={{marginBottom:'40px'}}>
             <Navbar bg={theme ? theme: 'dark'} variant={theme ? theme :'dark'}>
                 <Navbar.Brand href="/Home" className="navBrand">
                     <img
@@ -27,7 +27,7 @@ function Header({logoImg, width, height, heading, theme, headerLinks}) {
                     <Nav className="ml-auto">
                         {headerLinks ? 
                             Object.entries(headerLinks).map(item => (
-                                <Nav.Link href={item[1]}>{item[0]}</Nav.Link>
+                                <Nav.Link key={item[0]} href={item[1]}>{item[0]}</Nav.Link>
                             ))
                             : 
                             <Nav.Link href='/home'>Home</Nav.Link>

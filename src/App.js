@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header 
+       <Header 
         width="30" 
         height="30" 
         logoImg={logo} 
@@ -29,7 +29,7 @@ function App() {
       <Button
         onClick={() => console.log("Button clicked!!")}
         type="button"
-        buttonStyle="btn--primary--outline"
+        buttonStyle="btn--primary--solid"
         buttonSize="btn--small"
       ></Button>
 
