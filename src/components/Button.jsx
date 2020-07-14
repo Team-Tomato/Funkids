@@ -24,16 +24,16 @@ export const Button = ({
 }) => {
   function MouseOver(event) {
     const btnClass=event.target.classList;
-    if (btnClass[1]=='btn--primary--solid') {
+    if (btnClass[1]==='btn--primary--solid') {
       event.target.style.background="darkblue";
     };
-    if (btnClass[1]=='btn--warning--solid') {
+    if (btnClass[1]==='btn--warning--solid') {
       event.target.style.background="orange";
     };
-    if (btnClass[1]=='btn--danger--solid') {
+    if (btnClass[1]==='btn--danger--solid') {
       event.target.style.background="#960019";
     };
-    if (btnClass[1]=='btn--success--solid') {
+    if (btnClass[1]==='btn--success--solid') {
       event.target.style.background="darkgreen";
     };
   }
