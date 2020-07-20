@@ -5,7 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Header from './components/Header.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo2.png';
-
+import SpeechRecognition from "./components/Speech.jsx";
 
 function App() {
 
@@ -33,6 +33,9 @@ function App() {
         buttonStyle="btn--primary--solid"
         buttonSize="btn--small"
       ></Button>
+
+      <SpeechRecognition />
+
       <Footer
         year="2020"
         footerColor="footer--danger--outline"
