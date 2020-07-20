@@ -6,6 +6,7 @@ import Header from './components/Header.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo2.png';
 
+import Voice from "./components/speech-to-text/voice"
 
 function App() {
 
@@ -27,12 +28,9 @@ function App() {
         headerLinks={headerLinks}
       ></Header>
 
-      <Button
-        onClick={() => console.log("Button clicked!!")}
-        type="button"
-        buttonStyle="btn--primary--solid"
-        buttonSize="btn--small"
-      ></Button>
+
+      <Voice/>
+
       <Footer
         year="2020"
         footerColor="footer--danger--outline"
