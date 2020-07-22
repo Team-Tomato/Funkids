@@ -25,21 +25,35 @@ export const Button = ({
   function MouseOver(event) {
     const btnClass=event.target.classList;
     if (btnClass[1]=='btn--primary--solid') {
-      event.target.style.background="darkblue";
+      event.target.style.background="#144d74";
+      event.target.style.color="#fff"
+
+
     };
     if (btnClass[1]=='btn--warning--solid') {
       event.target.style.background="orange";
+      event.target.style.color="#fff"
+
+
     };
     if (btnClass[1]=='btn--danger--solid') {
-      event.target.style.background="#960019";
+      event.target.style.background="#790f0d";
+      event.target.style.color="#fff"
+
+    
     };
     if (btnClass[1]=='btn--success--solid') {
       event.target.style.background="darkgreen";
+      event.target.style.color="#fff"
+
+
     };
   }
 
   function MouseOut(event){
     event.target.style.background="";
+    event.target.style.color="#111"
+
   }
 
   const checkButtonStyle = STYLES.includes(buttonStyle)
