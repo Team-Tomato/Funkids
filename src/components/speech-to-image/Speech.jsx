@@ -1,40 +1,20 @@
-import React from "react";
-import PropTypes from "prop-types";
-import SpeechRecognition from "react-speech-recognition";
+import React, { useEffect } from "react";
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 import Showimage from './Showimage.jsx';
 import './Speech.css';
 
-const propTypes = {
-  transcript: PropTypes.string,
-  resetTranscript: PropTypes.func,
-  browserSupportsSpeechRecognition: PropTypes.bool,
-  startListening: PropTypes.func,
-  stopListening: PropTypes.func,
-  finalTranscript: PropTypes.string,
-  listening : PropTypes.bool
-};
+// CHANGED ACCORDING TO THE LATEST 3.0.2 VERSION
 
-const options = {
-  autoStart: false,
-  continuous: false
-}
+const Listening = () => {
+  const { transcript, resetTranscript, listening, finalTranscript } = useSpeechRecognition()
 
+  if (!SpeechRecognition.browserSupportsSpeechRecognition()) {
+      return null
+    }
 
-const Listening = ({
-  transcript,
-  resetTranscript,
-  startListening,
-  stopListening,
-  finalTranscript,
-  listening,
-  browserSupportsSpeechRecognition
-}) => {
-  if (!browserSupportsSpeechRecognition) {
-    return null;
-  }
 
   let disp_button;
-  disp_button = listening ? <button className="stop_button" onClick={stopListening} /> : <button className="start_button" onClick={startListening} /> 
+  disp_button = listening ? <button className="stop_button" onClick={SpeechRecognition.stopListening} /> : <button className="start_button" onClick={SpeechRecognition.startListening} /> 
 
   return (
 
@@ -79,9 +59,7 @@ const Listening = ({
     }
     </div>
 
-  );
-};
+  )
+}
 
-Listening.propTypes = propTypes;
-
-export default SpeechRecognition(options)(Listening);
+export default Listening;
