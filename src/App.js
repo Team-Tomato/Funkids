@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Header from './components/Header.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo2.png';
+import SpeechToImage from "./components/speech-to-image/Speech.jsx";
 
 import Voice from "./components/speech-to-text/voice"
 
@@ -28,7 +29,8 @@ function App() {
         headerLinks={headerLinks}
       ></Header>
 
-
+      <Button />
+      <SpeechToImage />
       <Voice/>
 
       <Footer
