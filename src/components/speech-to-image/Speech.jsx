@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition'
 import Showimage from './Showimage.jsx';
 import './Speech.css';
