@@ -4,6 +4,7 @@ import Button from "./components/Button.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from './components/Header.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from "./components/Card/card";
 import logo from './logo2.png';
 
 import Voice from "./components/speech-to-text/voice"
@@ -30,6 +31,7 @@ function App() {
 
 
       <Voice/>
+      <Card/>
 
       <Footer
         year="2020"
