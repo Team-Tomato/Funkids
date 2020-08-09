@@ -31,7 +31,15 @@ function App() {
 
 
       <Voice/>
-      <Card/>
+
+      <Card
+        title = "Card Title"
+        content = "Here Paste the Card Content"
+        buttonLabel = "Submit"
+        color = "lightblue"
+        width = "20rem"
+        onClick = ""
+      />
 
       <Footer
         year="2020"
