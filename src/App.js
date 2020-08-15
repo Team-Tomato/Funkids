@@ -4,6 +4,7 @@ import Button from "./components/Button.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from './components/Header.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from "./components/Card/card";
 import logo from './logo2.png';
 import SpeechToImage from "./components/speech-to-image/Speech.jsx";
 
@@ -32,6 +33,15 @@ function App() {
       <Button />
       <SpeechToImage />
       <Voice/>
+
+      <Card
+        title = "Card Title"
+        content = "Here Paste the Card Content"
+        buttonLabel = "Submit"
+        color = "lightblue"
+        width = "20rem"
+        onClick = ""
+      />
 
       <Footer
         year="2020"
